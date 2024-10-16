@@ -3,11 +3,12 @@ import os
 import asyncio
 import emailFunc
 from threading import Timer
+import config
 from emailFunc import filenames
 from emailFunc import save_all_file
 
 
-bot = telebot.TeleBot('')
+bot = telebot.TeleBot(config.token)
 
 
 @bot.message_handler(commands = ['start'])
@@ -45,7 +46,7 @@ def send(message):
 from threading import Timer
 
 def checker():
-    Timer(300, checker).start()
+    Timer(config.check_inteval, checker).start()
     try:
         save_all_file()
         if len(filenames)>0:

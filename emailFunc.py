@@ -4,10 +4,14 @@ import email
 import os
 import base64
 import nntplib
+import config
 
 
-mail_pass = ""
-gmail = ""
+
+mail_pass = config.mail_tok
+gmail = config.gmail
+# mail_pass = ""
+# gmail = ""
 # mail_pass = gmail
 # gmail = imap
 imap_server = "imap.gmail.com"
