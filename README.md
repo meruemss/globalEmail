@@ -9,16 +9,16 @@
 качаете termux
 и вводите:
 
-apt update
-apt upgrade
-apt install python
-apt install git
-pip install pyTelegramBotAPI
-mkdir gitrofls
-cd gitrofls
-git clone https://github.com/meruemss/globalEmail
-cd globalEmail
-mkdir documents
+apt update,
+apt upgrade,
+apt install python,
+apt install git,
+pip install pyTelegramBotAPI,
+mkdir gitrofls,
+cd gitrofls,
+git clone https://github.com/meruemss/globalEmail,
+cd globalEmail,
+mkdir documents,
 
 далее заходите удобным способом в файл config.py например:
 
